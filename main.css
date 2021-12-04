@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
-header {
+.main-header {
   padding: 30px;
   /* Not needed for demo */
 }
-header h1 {
+.main-header h1 {
   position: relative;
   left: 50%;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg);
@@ -26,7 +26,7 @@ header h1 {
   font-family: "frozen", serif;
   font-weight: 700;
 }
-header h1::before {
+.main-header h1::before {
   content: attr(data-heading);
   position: absolute;
   left: 0;
@@ -59,18 +59,27 @@ header h1::before {
   }
 }
 @font-face {
-  header {
+  .main-header {
     font-family: "frozen";
     src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
   }
 }
 @media screen and (max-width: 800px) {
-  header h1 {
+  .main-header h1 {
     font-size: 6vw;
     text-align: center;
   }
 }
 
+@media screen and (max-width: 320px) {
+  .main-header {
+    width: 400px;
+    margin: auto;
+  }
+  .main-header h1 {
+    font-size: 8vw;
+  }
+}
 .hero {
   background-image: radial-gradient(50% 176%, #253854 80%, #061922 100%);
   min-height: 60rem;
