@@ -250,6 +250,8 @@ body {
 }
 .info {
   background-image: url(../img/sandvej11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: auto;
   width: 400px;
   height: 500px;
