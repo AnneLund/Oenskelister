@@ -18,9 +18,10 @@ header h1 {
   background-size: contain;
   width: 100%;
   text-align: center;
+  letter-spacing: 2px;
   color: transparent;
   transform: translate(-50%, -50%);
-  font-size: 5vw;
+  font-size: 6vw;
   font-family: "frozen", serif;
   font-weight: 700;
 }
@@ -64,7 +65,7 @@ header h1::before {
 }
 @media screen and (max-width: 800px) {
   header h1 {
-    font-size: 5vw;
+    font-size: 6vw;
     text-align: center;
   }
 }
@@ -201,6 +202,11 @@ header h1::before {
   border-radius: 10%;
 }
 
+@media screen and (max-width: 800px) {
+  .r-container {
+    margin: 50px;
+  }
+}
 .info {
   margin: auto;
   width: 150px;
@@ -255,4 +261,10 @@ header h1::before {
 .v-container ol li a:hover {
   background-color: rgba(228, 175, 61, 0.664);
   transition: 500ms;
+}
+
+@media screen and (max-width: 800px) {
+  .v-container {
+    margin: 50px;
+  }
 }/*# sourceMappingURL=main.css.map */

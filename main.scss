@@ -17,9 +17,10 @@ header {
     background-size: contain;
     width: 100%;
     text-align: center;
+    letter-spacing: 2px;
     color: transparent;
     transform: translate(-50%, -50%);
-    font-size: 5vw;
+    font-size: 6vw;
     font-family: "frozen", serif;
     font-weight: 700;
 
@@ -62,18 +63,9 @@ header {
     src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
   }
 
-  // h1 {
-  //   font-family: "Corben", cursive;
-  //   font-size: 4vw;
-  //   color: white;
-  //   letter-spacing: 0.1rem;
-  //   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.66);
-  //   padding: 0 30px;
-  // }
-
   @media screen and (max-width: (800px)) {
     h1 {
-      font-size: 5vw;
+      font-size: 6vw;
       text-align: center;
     }
   }
@@ -212,6 +204,12 @@ header {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .r-container {
+    margin: 50px;
+  }
+}
+
 .info {
   margin: auto;
   width: 150px;
@@ -267,6 +265,12 @@ header {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .v-container {
+    margin: 50px;
   }
 }
 
