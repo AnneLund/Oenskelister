@@ -9,6 +9,7 @@
 @import url("https://fonts.googleapis.com/css?family=Corben:700");
 
 header {
+  padding: 30px;
   h1 {
     position: relative;
     left: 50%;
@@ -206,7 +207,8 @@ header {
 
 @media screen and (max-width: 800px) {
   .r-container {
-    margin: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
 }
 
@@ -270,7 +272,8 @@ header {
 
 @media screen and (max-width: 800px) {
   .v-container {
-    margin: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
 }
 
