@@ -8,10 +8,12 @@
 
 .main-header {
   padding: 30px;
+  width: 1000px;
   /* Not needed for demo */
 }
 .main-header h1 {
   position: relative;
+  top: 100px;
   left: 50%;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg);
   -webkit-background-clip: text;
@@ -30,7 +32,7 @@
   content: attr(data-heading);
   position: absolute;
   left: 0;
-  top: 0;
+  top: 1px;
   width: 100%;
   background: linear-gradient(45deg, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 100%);
   -webkit-background-clip: text;
@@ -73,7 +75,8 @@
 
 @media screen and (max-width: 320px) {
   .main-header {
-    width: 400px;
+    width: 350px;
+    padding: 25px;
     margin: auto;
   }
   .main-header h1 {
