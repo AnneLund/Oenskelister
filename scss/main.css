@@ -7,25 +7,27 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 1920px;
+  margin: auto;
+}
+
 .main-header {
-  padding: 30px;
-  width: 1000px;
-  /* Not needed for demo */
+  text-align: center;
+  position: relative;
 }
 .main-header h1 {
-  position: relative;
-  top: 100px;
+  width: 100%;
+  position: absolute;
   left: 50%;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg);
   -webkit-background-clip: text;
           background-clip: text;
   background-size: contain;
-  width: 100%;
-  text-align: center;
   letter-spacing: 2px;
   color: transparent;
   transform: translate(-50%, -50%);
-  font-size: 6vw;
+  font-size: 5vw;
   font-family: "frozen", serif;
   font-weight: 700;
 }
@@ -45,46 +47,41 @@
   background-size: 200%;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2), -2px 2px 10px rgba(0, 0, 0, 0.2), -2px -2px 10px rgba(0, 0, 0, 0.2);
 }
-@-webkit-keyframes shine {
-  0% {
-    background-position: -100%;
-  }
-  100% {
-    background-position: 100%;
-  }
-}
-@keyframes shine {
-  0% {
-    background-position: -100%;
-  }
-  100% {
-    background-position: 100%;
-  }
-}
-@font-face {
+
+@media screen and (max-width: 800px) {
   .main-header {
+    padding: 50px;
+  }
+  .main-header h1 {
+    font-size: 5vw;
+  }
+
+  @-webkit-keyframes shine {
+    0% {
+      background-position: -100%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: -100%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  /* Not needed for demo */
+  @font-face {
     font-family: "frozen";
     src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
   }
 }
-@media screen and (max-width: 800px) {
-  .main-header .main-header {
-    width: 350px;
-    padding: 25px;
-    margin: auto;
-  }
-  .main-header .main-header h1 {
-    font-size: 8vw;
-    position: relative;
-    top: 50px;
-    left: 50%;
-  }
-}
-
 @media screen and (max-width: 320px) {
   .main-header {
-    width: 350px;
-    padding: 25px;
+    width: 250px;
     margin: auto;
   }
   .main-header h1 {
@@ -95,6 +92,8 @@
   }
 }
 .hero {
+  max-width: 1920px;
+  margin: auto;
   background-image: radial-gradient(50% 176%, #253854 80%, #061922 100%);
   min-height: 60rem;
   position: relative;
@@ -103,8 +102,6 @@
   justify-content: center;
 }
 .hero__content {
-  position: relative;
-  top: -50px;
   align-self: center;
   padding: 2rem 0;
 }
@@ -252,7 +249,7 @@
   }
 }
 .info {
-  background-image: url(/img/sandvej11.jpg);
+  background-image: url(../img/sandvej11.jpg);
   margin: auto;
   width: 400px;
   height: 500px;
