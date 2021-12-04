@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Corben:700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-family: "Corben", cursive;
+  font-size: 4vw;
+  color: white;
+  letter-spacing: 0.1rem;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.66);
+  padding: 0 30px;
+}
+@media screen and (max-width: 800px) {
+  header h1 {
+    font-size: 5vw;
+    text-align: center;
+  }
+}
+
+.hero {
+  background-image: radial-gradient(50% 176%, #253854 80%, #061922 100%);
+  min-height: 60rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.hero__content {
+  position: relative;
+  top: -50px;
+  align-self: center;
+  padding: 2rem 0;
+}
+@media screen and (max-width: 800px) {
+  .hero__content {
+    position: relative;
+    top: 0px;
+  }
+}
+
+.snow {
+  z-index: 0;
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.snow .svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#snow-top-layer {
+  will-change: transform;
+  transform: translateY(-768px);
+  -webkit-animation: fall 22.5s infinite linear;
+          animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+  will-change: transform;
+  transform: translateY(-768px);
+  -webkit-animation: fall 45s infinite linear;
+          animation: fall 45s infinite linear;
+}
+
+@-webkit-keyframes fall {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fall {
+  100% {
+    transform: translateY(0);
+  }
+}
+.lists {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .lists {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 20px;
+    gap: 20px;
+  }
+}
+.r-container {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  margin: auto;
+  width: 400px;
+  height: 500px;
+  box-shadow: 5px 5px 5px;
+  border-radius: 2%;
+}
+.r-container img {
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+  border-radius: 2%;
+}
+.r-container .r-text {
+  position: absolute;
+  top: 0;
+  right: 70px;
+}
+.r-container header {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding-top: 20px;
+}
+.r-container header h2 {
+  color: #b0c3ff;
+}
+.r-container section {
+  display: flex;
+  justify-content: center;
+}
+.r-container ol {
+  z-index: 1;
+}
+.r-container ol li {
+  color: #9eb4ff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+.r-container ol li a {
+  padding: 5px;
+  text-decoration: none;
+  color: #a7bcff;
+}
+.r-container ol li a:hover {
+  background-color: rgba(155, 26, 148, 0.664);
+  transition: 500ms;
+  border-radius: 10%;
+}
+
+.info {
+  margin: auto;
+  width: 150px;
+}
+.info p {
+  text-align: center;
+  font-size: 20px;
+}
+.info p img {
+  width: 50%;
+}
+
+.v-container {
+  font-family: "Playfair Display", serif;
+  margin: auto;
+  background-image: url(/assets/img/brev-baggrund.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 500px;
+  box-shadow: 5px 5px 5px;
+  border-radius: 2%;
+}
+.v-container header {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  padding-top: 20px;
+}
+.v-container header h2 {
+  color: black;
+}
+.v-container section {
+  display: flex;
+  justify-content: center;
+}
+.v-container ol {
+  z-index: 1;
+}
+.v-container ol li {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+  list-style-type: decimal;
+}
+.v-container ol li a {
+  padding: 5px 0;
+  text-decoration: none;
+  color: black;
+}
+.v-container ol li a:hover {
+  background-color: rgba(228, 175, 61, 0.664);
+  transition: 500ms;
+}/*# sourceMappingURL=main.css.map */
