@@ -214,6 +214,23 @@
   transition: 500ms;
   border-radius: 10%;
 }
+.r-container form {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+.r-container form input {
+  z-index: 1;
+  width: 50px;
+  margin: 10px;
+}
+.r-container form label {
+  font-size: 30px;
+}
+.r-container form button {
+  padding: 5px;
+  margin: 10px 0;
+}
 
 @media screen and (max-width: 800px) {
   .r-container {
@@ -275,6 +292,22 @@
 .v-container ol li a:hover {
   background-color: rgba(228, 175, 61, 0.664);
   transition: 500ms;
+}
+.v-container form {
+  display: flex;
+  padding: 40px 5px 0 5px;
+}
+.v-container form input {
+  z-index: 1;
+  width: 50px;
+  margin: 10px;
+}
+.v-container form label {
+  font-size: 30px;
+}
+.v-container form button {
+  padding: 5px;
+  margin: 10px 0;
 }
 
 @media screen and (max-width: 800px) {

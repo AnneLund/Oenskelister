@@ -217,6 +217,23 @@
       }
     }
   }
+  form {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    input {
+      z-index: 1;
+      width: 50px;
+      margin: 10px;
+    }
+    label {
+      font-size: 30px;
+    }
+    button {
+      padding: 5px;
+      margin: 10px 0;
+    }
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -282,6 +299,23 @@
       }
     }
   }
+
+  form {
+    display: flex;
+    padding: 40px 5px 0 5px;
+    input {
+      z-index: 1;
+      width: 50px;
+      margin: 10px;
+    }
+    label {
+      font-size: 30px;
+    }
+    button {
+      padding: 5px;
+      margin: 10px 0;
+    }
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -290,6 +324,3 @@
     margin-right: 80px;
   }
 }
-
-// footer {
-// }
