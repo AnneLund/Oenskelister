@@ -1,12 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Corben:700");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
-
-@import url("https://fonts.googleapis.com/css?family=Corben:700");
 
 .main-header {
   padding: 30px;
@@ -157,6 +157,7 @@
   display: grid;
   grid-template-columns: auto auto auto;
   margin-top: 100px;
+  gap: 20px;
 }
 
 @media screen and (max-width: (800px)) {
@@ -261,11 +262,17 @@
 }
 
 .info {
+  background-image: url(/img/sandvej11.jpg);
   margin: auto;
-  width: 150px;
+  width: 400px;
+  height: 500px;
+  box-shadow: 5px 5px 5px;
+  border-radius: 2%;
   p {
+    color: white;
     text-align: center;
-    font-size: 20px;
+    padding: 60px 30px;
+    font-size: 18px;
     img {
       width: 50%;
     }
