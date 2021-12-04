@@ -67,9 +67,16 @@
   }
 }
 @media screen and (max-width: 800px) {
-  .main-header h1 {
-    font-size: 6vw;
-    text-align: center;
+  .main-header .main-header {
+    width: 350px;
+    padding: 25px;
+    margin: auto;
+  }
+  .main-header .main-header h1 {
+    font-size: 8vw;
+    position: relative;
+    top: 50px;
+    left: 50%;
   }
 }
 
@@ -81,6 +88,9 @@
   }
   .main-header h1 {
     font-size: 8vw;
+    position: relative;
+    top: 50px;
+    left: 50%;
   }
 }
 .hero {
@@ -155,8 +165,9 @@
 @media screen and (max-width: 800px) {
   .lists {
     display: grid;
+    justify-content: center;
     grid-template-columns: auto;
-    margin-top: 20px;
+    margin-top: 60px;
     gap: 20px;
   }
 }
@@ -253,7 +264,7 @@
 .v-container {
   font-family: "Playfair Display", serif;
   margin: auto;
-  background-image: url(./img/brev-baggrund.jpeg);
+  background-image: url(../img/brev-baggrund.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 400px;
