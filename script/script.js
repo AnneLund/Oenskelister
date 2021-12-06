@@ -10,7 +10,7 @@ function myFunction() {
   let x = document.getElementById("numb").value;
   // Hvis x ikke er et tal, eller hvis det er under 1 og over 10:
   let text;
-  if (isNaN(x) || x < 1 || x > 10) {
+  if (isNaN(x) || x < 1 || x > 9) {
     text = "Nummeret findes ikke";
   }
 
