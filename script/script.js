@@ -30,7 +30,7 @@ function myFunctiontwo() {
   // If x is Not a Number or less than one or greater than 10
   let text;
   if (isNaN(x) || x < 1 || x > 8) {
-    text = "Input not valid";
+    text = "Nummeret findes ikke";
   } else {
     text = "Tak!";
   }
