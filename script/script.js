@@ -6,28 +6,30 @@ h1.addEventListener("input", function () {
 });
 
 function myFunction() {
-  // Get the value of the input field with id="numb"
+  // Udregner resultatet fra input-feltet med ID'et value.
   let x = document.getElementById("numb").value;
-  // If x is Not a Number or less than one or greater than 10
+  // Hvis x ikke er et tal, eller hvis det er under 1 og over 10:
   let text;
   if (isNaN(x) || x < 1 || x > 10) {
-    text = "Input not valid";
-  } else {
+    text = "Nummeret findes ikke";
+  }
+
+  // Hvis tallet er mellem 1-10:
+  else {
     text = "Tak!";
   }
   document.getElementById("demo").innerHTML = text;
-
   result = x;
 
   console.log(result);
 }
 
-function myFunction() {
+function myFunctiontwo() {
   // Get the value of the input field with id="numb"
   let x = document.getElementById("numbtwo").value;
   // If x is Not a Number or less than one or greater than 10
   let text;
-  if (isNaN(x) || x < 1 || x > 10) {
+  if (isNaN(x) || x < 1 || x > 8) {
     text = "Input not valid";
   } else {
     text = "Tak!";
