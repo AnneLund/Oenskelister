@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ønskelister</title>
-    <link rel="stylesheet" href="../Oenskelister/scss/main.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
     <div class="hero">
@@ -29,9 +29,10 @@
                 <h2>Rebeccas ønskeliste</h2>
               </header>
               <section>
-                <ol>
-                  <li>
-                    Hængeøreringe som
+                <ul>
+                  <li id="pi0"></li>
+                  <li id="pi1">
+                    1. Hængeøreringe som
                     <a
                       href="https://glitter.dk/dk/sma-lyserode-og-lilla-creoler-i-aegte-solv"
                       target="_blank"
@@ -44,63 +45,65 @@
                       >dem her</a
                     >
                   </li>
-                  <li>Kaninbamse der ser nuttet ud</li>
-                  <li>
+                  <li id="pi2">2. Kaninbamse der ser nuttet ud</li>
+                  <li id="pi3">
                     <a
                       href="https://www.br.dk/produkter/my-magic-mixies-magiske-gryde-pink/100575288/"
                       target="_blank"
-                      >Magic Mixies gryde</a
+                      >3. Magic Mixies gryde</a
                     >
                   </li>
-                  <li>
+                  <li id="pi4">
                     <a
                       href="https://www.br.dk/produkter/scruff-a-luvs-serie-2-families-panda/100540535/"
                       target="_blank"
-                      >Scruff a Luvs
+                      >4. Scruff a Luvs
                     </a>
                   </li>
-                  <li>
+                  <li id="pi5">
                     <a
                       href="https://www.br.dk/produkter/shimmer-n-sparkle-ultimate-makeup-designer/100487262/"
                       target="_blank"
-                      >Ultimate Make-up Designer</a
+                      >5. Ultimate Make-up Designer</a
                     >
                   </li>
-                  <li>
+                  <li id="pi6">
                     <a
                       href="https://www.br.dk/produkter/diskosaet-3-i-1/100538055/"
                       target="_blank"
-                      >Diskokugle</a
+                      >6. Diskokugle</a
                     >
                   </li>
-                  <li>
+                  <li id="pi7">
                     <a
                       href="https://www.br.dk/produkter/silverlit-bumper-drone-hd/100392348/"
                       target="_blank"
-                      >Bumper Drone</a
+                      >7. Bumper Drone</a
                     >
                   </li>
-                  <li>
+                  <li id="pi8">
                     <a
                       href="https://www.br.dk/produkter/kindi-kids-bella-bow-ovn/200052831/"
                       target="_blank"
-                      >Bella Bow Legesæt</a
+                      >8. Bella Bow Legesæt</a
                     >
                   </li>
 
-                  <li>
+                  <li id="pi9">
                     <a
                       href="https://panduro.com/da-dk/products/born-junior/konstruktion/3doodler/3doodler-start-pen-set-803325?gclid=EAIaIQobChMI162w2urJ9AIVlACLCh2IawPpEAQYASABEgLp7fD_BwE#fo_c=3246&fo_k=95e6b1bf703c0322b57310989b13ea3f&fo_s=gpladk"
-                      >Doodler</a
+                      >9. Doodler</a
                     >
                   </li>
-                </ol>
+                </ul>
               </section>
               <form>
                 <label for="tel">Ønske nummer:</label> <br />
-                <input id="numb" />
+                <input id="pritem" />
 
-                <button type="button" onclick="myFunction()">Send</button>
+                <button type="button" onclick="removeitemarraygirl()">
+                  Send
+                </button>
               </form>
               <p id="demo"></p>
             </div>
@@ -119,75 +122,76 @@
             </header>
 
             <section>
-              <ol>
-                <li>
+              <ul>
+                <li id="di0"></li>
+                <li id="di1">
                   <a
                     href="https://www.br.dk/produkter/bmw-i8-licens-elbil/100551616/"
                     target="_blank"
-                    >En bil jeg kan sidde i og styre</a
+                    >1. En bil jeg kan sidde i og styre</a
                   >
                 </li>
-                <li>
+                <li id="di2">
                   <a
                     href="https://panduro.com/da-dk/products/born-junior/konstruktion/3doodler/3doodler-start-pen-set-803325?gclid=EAIaIQobChMI162w2urJ9AIVlACLCh2IawPpEAQYASABEgLp7fD_BwE#fo_c=3246&fo_k=95e6b1bf703c0322b57310989b13ea3f&fo_s=gpladk"
                     target="_blank"
-                    >Doodler</a
+                    >2. Doodler</a
                   >
                 </li>
-                <li>
+                <li id="di3">
                   <a
                     href="https://www.br.dk/produkter/batman-batmobil-1-24-metal-m-figur/100579586/"
                     target="_blank"
-                    >Batmobil</a
+                    >3. Batmobil</a
                   >
                 </li>
-                <li>
+                <li id="di4">
                   <a
                     href="https://www.br.dk/produkter/dinosaur-tyrannosaurus-fjernstyret/100560534/"
                     target="_blank"
-                    >Fjernstyret dinosaurus</a
+                    >4. Fjernstyret dinosaurus</a
                   >
                 </li>
 
-                <li>
+                <li id="di5">
                   <a
                     href="https://www.br.dk/produkter/bruder-skraldebil/100481169/"
                     target="_blank"
-                    >Skraldebil</a
+                    >5. Skraldebil</a
                   >
                 </li>
 
-                <li>
+                <li id="di6">
                   <a
                     href="https://www.br.dk/produkter/rc-6430tt-walkie-talkie-til-boern/100502045/"
                     target="_blank"
-                    >Walkie Talkies</a
+                    >6. Walkie Talkies</a
                   >
                 </li>
 
-                <li>
+                <li id="di7">
                   <a
                     href="https://www.br.dk/produkter/diskosaet-3-i-1/100538055/"
                     target="_blank"
-                    >Diskokugler</a
+                    >7. Diskokugler</a
                   >
                 </li>
 
-                <li>
+                <li id="di8">
                   <a
                     href="https://www.br.dk/produkter/laererig-baerbar-computer/100583186/"
                     target="_blank"
-                    >Computer</a
+                    >8. Computer</a
                   >
                 </li>
-              </ol>
+              </ul>
             </section>
 
             <form>
               <label for="tel">Ønske nummer:</label> <br />
-              <input id="numbtwo" />
+              <input id="dritem" />
 
-              <button type="button" onclick="myFunctiontwo()">Send</button>
+              <button type="button" onclick="removeitemarrayboy()">Send</button>
             </form>
             <p id="demotwo"></p>
           </div>

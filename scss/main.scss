@@ -207,15 +207,14 @@ body {
     justify-content: center;
   }
 
-  ol {
+  ul {
     z-index: 1;
     li {
       color: rgb(158, 180, 255);
       font-size: 18px;
       font-weight: bold;
       padding: 5px;
-      list-style-type: decimal;
-      list-style-position: inside;
+      list-style-type: none;
 
       a {
         padding: 5px;
@@ -309,14 +308,14 @@ body {
     justify-content: center;
   }
 
-  ol {
+  ul {
     z-index: 1;
     li {
       color: black;
       font-size: 18px;
       font-weight: bold;
       padding: 5px;
-      list-style-type: decimal;
+      list-style-type: none;
       a {
         padding: 5px 0;
         text-decoration: none;
