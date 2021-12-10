@@ -227,6 +227,9 @@ body {
         }
       }
     }
+    #pi3 {
+      text-decoration: line-through;
+    }
   }
   form {
     display: flex;
@@ -311,7 +314,7 @@ body {
   ul {
     z-index: 1;
     li {
-      color: black;
+      color: rgb(0, 0, 0);
       font-size: 18px;
       font-weight: bold;
       padding: 5px;
@@ -325,6 +328,13 @@ body {
           transition: 500ms;
         }
       }
+    }
+    #di4 {
+      text-decoration: line-through;
+    }
+
+    #di6 {
+      text-decoration: line-through;
     }
   }
 
@@ -348,11 +358,11 @@ body {
       margin: 0 5px;
     }
   }
-}
 
-@media screen and (max-width: 800px) {
-  .v-container {
-    margin-left: 80px;
-    margin-right: 80px;
+  @media screen and (max-width: 800px) {
+    .v-container {
+      margin-left: 80px;
+      margin-right: 80px;
+    }
   }
 }

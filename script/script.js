@@ -5,7 +5,7 @@ h1.addEventListener("input", function () {
   this.setAttribute("data-heading", this.innerText);
 });
 
-// window.localStorage.clear();
+window.localStorage.clear();
 
 //REBECCAS ØNSKELISTE
 

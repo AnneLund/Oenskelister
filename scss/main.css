@@ -223,6 +223,9 @@ body {
   transition: 500ms;
   border-radius: 10%;
 }
+.r-container ul #pi3 {
+  text-decoration: line-through;
+}
 .r-container form {
   display: flex;
   justify-content: center;
@@ -313,6 +316,12 @@ body {
   background-color: rgba(228, 175, 61, 0.664);
   transition: 500ms;
 }
+.v-container ul #di4 {
+  text-decoration: line-through;
+}
+.v-container ul #di6 {
+  text-decoration: line-through;
+}
 .v-container form {
   display: flex;
   justify-content: center;
@@ -333,9 +342,8 @@ body {
   padding: 5px;
   margin: 0 5px;
 }
-
 @media screen and (max-width: 800px) {
-  .v-container {
+  .v-container .v-container {
     margin-left: 80px;
     margin-right: 80px;
   }
